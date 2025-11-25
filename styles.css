@@ -1,3 +1,4 @@
+/* Global Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Header Styling */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -21,6 +23,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* Logo Section */
 .logo {
     display: flex;
     align-items: center;
@@ -38,6 +41,7 @@
     color: #000000;
 }
 
+/* Navigation Menu */
 .main-nav ul {
     list-style: none;
     display: flex;
@@ -56,6 +60,7 @@
     color: #B88E2F;
 }
 
+/* Action Icons */
 .action-icons {
     display: flex;
     gap: 45px;
@@ -71,6 +76,7 @@
     color: #B88E2F;
 }
 
+/* Hero Section */
 .hero-section {
     background-image: url('./pics/scandinavian-interior-mockup-wall-decal-background 1.jpg');
     background-size: cover;
@@ -82,6 +88,7 @@
     padding: 0 80px;
 }
 
+/* Hero Content Box */
 .hero-content-box {
     background-color: #FFF3E3;
     padding: 40px;
@@ -110,6 +117,7 @@
     margin-bottom: 25px;
 }
 
+/* Buy Now Button */
 .btn-buy-now {
     display: inline-block;
     background-color: #B88E2F;
@@ -127,6 +135,7 @@
     background-color: #a07d2a;
 }
 
+/* Container & Section Titles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -148,6 +157,7 @@
     margin-bottom: 40px;
 }
 
+/* Browse Range Section */
 .browse-range-section {
     padding: 60px 0;
 }
@@ -179,6 +189,7 @@
     color: #333;
 }
 
+/* Products Section */
 .products-section {
     padding: 80px 0;
     background-color: #fcf8f3;
@@ -245,6 +256,7 @@
     margin-left: 10px;
 }
 
+/* Product Badges */
 .product-badge {
     position: absolute;
     top: 20px;
@@ -269,6 +281,7 @@
     background-color: #E97171;
 }
 
+/* Overlay on hover */
 .product-overlay {
     position: absolute;
     top: 0;
@@ -293,7 +306,7 @@
     opacity: 1;
 }
 
-
+/* Add to Cart Button */
 .add-to-cart-btn {
     background-color: #ffffff;
     color: #B88E2F;
@@ -302,7 +315,7 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 0; 
+    border-radius: 0;
     margin-bottom: 20px;
 }
 
@@ -337,13 +350,16 @@
     padding: 15px 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-} 
+}
+
+/* Root Variables */
 :root {
     --text-color: #333;
     --light-bg: #fdfaf5;
     --accent-color: #a48135;
 }
 
+/* Inspirations Section */
 .inspirations-section {
     display: flex;
     max-width: 1200px;
@@ -393,6 +409,7 @@
     padding-right: 5%;
 }
 
+/* Carousel Items */
 .carousel-item {
     flex-shrink: 0;
     height: 550px;
@@ -442,10 +459,8 @@
     box-sizing: border-box;
 }
 
-
-
 .item-number {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #333;
     font-weight: 400;
     display: inline-block;
@@ -454,9 +469,9 @@
 
 .separator {
     display: inline-block;
-    width: 25px; 
+    width: 25px;
     height: 1px;
-    background-color: #333; 
+    background-color: #333;
     margin: 0 10px;
     vertical-align: middle;
 }
@@ -473,35 +488,28 @@
     line-height: 1.4;
 }
 
-
 .item-heading {
-   
-    flex-basis: auto; 
-    font-size: 2rem; 
+    flex-basis: auto;
+    font-size: 2rem;
     font-weight: 750;
-    margin: 22px 0 0; 
+    margin: 22px 0 0;
 }
 
 .item-arrow {
     position: absolute;
-   
-    right: -70px; 
-    bottom: 0; 
-    
-    
-    background-color: #a88a44; 
+    right: -70px;
+    bottom: 0;
+    background-color: #a88a44;
     color: white;
-    width: 70px; 
+    width: 70px;
     height: 70px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
     text-decoration: none;
-    line-height: 1; 
+    line-height: 1;
 }
-
 
 .item-image {
     position: absolute;
@@ -517,11 +525,11 @@
     object-fit: cover;
 }
 
-
+/* Carousel Dots */
 .carousel-dots {
     position: absolute;
-    bottom: 30px; 
-    right: 15%; 
+    bottom: 30px;
+    right: 15%;
     display: flex;
     gap: 10px;
 }
@@ -537,6 +545,8 @@
 .dot.active {
     background-color: var(--accent-color);
 }
+
+/* Gallery Section */
 .gallery-section {
     padding: 80px 0;
     text-align: center;
@@ -558,6 +568,7 @@
     margin-bottom: 50px;
 }
 
+/* Grid Section */
 .grid-section {
     overflow: hidden;
 }
@@ -565,15 +576,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 90px); /* Increased height */
+    grid-template-rows: repeat(8, 90px);
     gap: 1rem;
-}
-
-.setup-subheading {
-    color: var(--text-color-light);
-    margin-bottom: 1rem;
-    font-size: var(--fs-2);
-    text-align: center;
 }
 
 .grid-item {
@@ -585,54 +589,18 @@
     filter: brightness(80%);
 }
 
-/* TOP IMAGES */
-.grid-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-}
+/* Grid Item Positions */
+.grid-1 { grid-column: 1 / 2; grid-row: 1 / 4; }
+.grid-2 { grid-column: 2 / 4; grid-row: 2 / 4; }
+.grid-3 { grid-column: 4 / 5; grid-row: 3 / 6; }
+.grid-4 { grid-column: 5 / 7; grid-row: 2 / 5; }
+.grid-5 { grid-column: 7 / 9; grid-row: 1 / 5; }
+.grid-6 { grid-column: 1 / 3; grid-row: 5 / 8; }
+.grid-7 { grid-column: 3 / 4; grid-row: 5 / 8; }
+.grid-8 { grid-column: 5 / 6; grid-row: 6 / 9; }
+.grid-9 { grid-column: 6 / 8; grid-row: 6 / 9; }
 
-.grid-2 {
-    grid-column: 2 / 4;
-    grid-row: 2 / 4;
-}
-
-.grid-3 {
-    grid-column: 4 / 5;
-    grid-row: 3 / 6;
-}
-
-.grid-4 {
-    grid-column: 5 / 7;
-    grid-row: 2 / 5;
-}
-
-.grid-5 {
-    grid-column: 7 / 9;
-    grid-row: 1 / 5;
-}
-
-/* BOTTOM IMAGES (Adjusted to avoid overlap, not too low) */
-.grid-6 {
-    grid-column: 1 / 3;
-    grid-row: 5 / 8; /* was 4 / 8 → moved UP */
-}
-
-.grid-7 {
-    grid-column: 3 / 4;
-    grid-row: 5 / 8; /* was 4 / 7 → aligned better */
-}
-
-.grid-8 {
-    grid-column: 5 / 6;
-    grid-row: 6 / 9; /* slightly up but still aligned */
-}
-
-.grid-9 {
-    grid-column: 6 / 8;
-    grid-row: 6 / 9; /* aligned with 8 */
-}
-
-
+/* Footer Section */
 .main-footer {
     padding: 60px 0 0 0;
     border-top: 1px solid #E8E8E8;
@@ -648,7 +616,7 @@
     gap: 40px;
 }
 
-/* Column 1: Brand Info */
+/* Brand Info */
 .brand-info {
     max-width: 300px;
     flex-basis: 30%;
@@ -667,7 +635,7 @@
     line-height: 1.6;
 }
 
-/* Columns 2 & 3: Links */
+/* Footer Links */
 .footer-links h3 {
     font-size: 16px;
     font-weight: 500;
@@ -696,7 +664,7 @@
     color: #B88E2F;
 }
 
-/* Column 4: Newsletter */
+/* Newsletter */
 .newsletter h3 {
     font-size: 16px;
     font-weight: 500;
@@ -739,7 +707,7 @@
     border-bottom: 1px solid #B88E2F;
 }
 
-
+/* Copyright */
 .copyright {
     max-width: 1200px;
     margin: 0 auto;
@@ -752,49 +720,39 @@
     color: #000000;
     font-weight: 400;
 }
-/* ==========================================
-   SAME DESIGN ON ALL DEVICES (ONLY SCALING)
-   ========================================== */
 
-/* ---- Max 1400px ---- */
+/* Media Queries for scaling on all devices */
 @media (max-width: 1400px) {
     .main-header { padding: 15px 50px; }
     .hero-section { padding: 0 50px; }
     .inspirations-section { padding: 50px 0; }
 }
 
-/* ---- Max 1200px ---- */
 @media (max-width: 1200px) {
-    body { zoom: 0.93; }     /* Full page scale down */
+    body { zoom: 0.93; }
 }
 
-/* ---- Max 1024px (Tablet Landscape / Small Laptop) ---- */
 @media (max-width: 1024px) {
     body { zoom: 0.85; }
     .main-header { padding: 15px 40px; }
 }
 
-/* ---- Max 900px ---- */
 @media (max-width: 900px) {
     body { zoom: 0.78; }
 }
 
-/* ---- Max 768px (Tablet Portrait) ---- */
 @media (max-width: 768px) {
     body { zoom: 0.70; }
 }
 
-/* ---- Max 600px ---- */
 @media (max-width: 600px) {
     body { zoom: 0.62; }
 }
 
-/* ---- Max 480px (Mobile) ---- */
 @media (max-width: 480px) {
-    body { zoom: 0.55; }   /* Mobile me same layout chhota hoke show */
+    body { zoom: 0.55; }
 }
 
-/* ---- Max 380px (Small Phones) ---- */
 @media (max-width: 380px) {
-    body { zoom: 0.48; }
+    body { zoom: 0.50; }
 }

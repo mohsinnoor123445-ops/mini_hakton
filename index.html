@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniro </title>
+    <title>Furniro</title>
+    <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link to custom JavaScript -->
     <script src="./web.js"></script>
 </head>
 <body>
 
+    <!-- Header section containing logo, navigation, and action icons -->
     <header class="main-header">
         <div class="logo">
             <img src="./pics/Meubel House_Logos-05 (1).png" alt="Furniro Logo" class="logo-icon"> 
             <h1>Furniro</h1>
         </div>
 
+        <!-- Main navigation menu -->
         <nav class="main-nav">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -25,6 +30,7 @@
             </ul>
         </nav>
 
+        <!-- Action icons (User, Search, Wishlist, Cart) -->
         <div class="action-icons">
             <a href="#"><i class="fas fa-user"></i></a>
             <a href="#"><i class="fas fa-search"></i></a>
@@ -32,6 +38,8 @@
             <a href="#"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
+
+    <!-- Main hero section -->
     <main>
         <section class="hero-section">
             <div class="hero-content-box">
@@ -44,39 +52,39 @@
                 <a href="#" class="btn-buy-now">BUY NOW</a>
             </div>
         </section>
-    </main>
-    <section class="browse-range-section">
+
+        <!-- Browse Range Section: Displaying categories -->
+        <section class="browse-range-section">
             <div class="container">
                 <h2 class="section-title">Browse The Range</h2>
                 <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                 <div class="range-grid">
                     <div class="range-item">
-                        <img src="./pics/Mask Group.jpg" 
-                             alt="Dining Room Furniture" class="range-image">
+                        <img src="./pics/Mask Group.jpg" alt="Dining Room Furniture" class="range-image">
                         <h3 class="range-name">Dining</h3>
                     </div>
 
                     <div class="range-item">
-                        <img src="./pics/Image-living room.jpg" 
-                             alt="Living Room Furniture" class="range-image">
+                        <img src="./pics/Image-living room.jpg" alt="Living Room Furniture" class="range-image">
                         <h3 class="range-name">Living</h3>
                     </div>
 
                     <div class="range-item">
-                        <img src="./pics/Mask Group (1).jpg" 
-                             alt="Bedroom Furniture" class="range-image">
+                        <img src="./pics/Mask Group (1).jpg" alt="Bedroom Furniture" class="range-image">
                         <h3 class="range-name">Bedroom</h3>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Products Section: Displaying products -->
         <section class="products-section">
             <div class="container">
                 <h2 class="section-title">Our Products</h2>
 
                 <div class="product-grid">
-                    
+                    <!-- Product Card: Syltherine -->
                     <div class="product-card">
                         <img src="./pics/Images (4).png" alt="Syltherine" class="product-image">
                         <div class="product-info">
@@ -87,8 +95,7 @@
                                 <span class="old-price">Rp 3.500.000</span>
                             </div>
                         </div>
-                        <div class="product-badge discount">-30%</div> 
-                        
+                        <div class="product-badge discount">-30%</div>
                         <div class="product-overlay">
                             <button class="add-to-cart-btn">Add to cart</button>
                             <div class="overlay-actions">
@@ -99,6 +106,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Leviosa -->
                     <div class="product-card">
                         <img src="./pics/Images (1).png" alt="Leviosa" class="product-image">
                         <div class="product-info">
@@ -118,6 +126,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Lolito -->
                     <div class="product-card">
                         <img src="./pics/Images (4).png" alt="Lolito" class="product-image">
                         <div class="product-info">
@@ -139,6 +148,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Respira -->
                     <div class="product-card">
                         <img src="./pics/Images (1).png" alt="Respira" class="product-image">
                         <div class="product-info">
@@ -159,6 +169,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Grifo -->
                     <div class="product-card">
                         <img src="./pics/Images (5).png" alt="Grifo" class="product-image">
                         <div class="product-info">
@@ -178,6 +189,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Muggo -->
                     <div class="product-card">
                         <img src="./pics/Images (6).png" alt="Muggo" class="product-image">
                         <div class="product-info">
@@ -198,6 +210,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Pingky -->
                     <div class="product-card">
                         <img src="./pics/Images (7).png" alt="Pingky" class="product-image">
                         <div class="product-info">
@@ -219,6 +232,7 @@
                         </div>
                     </div>
 
+                    <!-- Product Card: Potty -->
                     <div class="product-card">
                         <img src="./pics/Images (8).png" alt="Potty" class="product-image">
                         <div class="product-info">
@@ -238,79 +252,80 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
+                <!-- Show More Button -->
                 <div class="show-more-wrapper">
                     <a href="#" class="btn-show-more">Show More</a>
                 </div>
             </div>
+        </section>
+
+        <!-- Inspirations Section -->
         <section class="inspirations-section">
-    <div class="inspirations-content">
-        <h2 class="inspirations-title">50+ Beautiful rooms inspiration</h2>
-        <p class="inspirations-subtitle">Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
-        <button class="explore-button">Explore More</button>
-    </div>
-
-    <div class="inspirations-carousel-container">
-        <div class="carousel-item featured-item">
-            <img src="./pics/Rectangle 24.png" alt="Bed Room Inspiration">
-            <div class="item-info">
-        <div class="info-details">
-            <span class="item-number">01</span>
-            <span class="separator"></span>
-            <span class="item-name">Bed Room</span>
-            <h3 class="item-heading">Inner Peace</h3>
-        </div>
-        <a href="#" class="item-arrow">
-            &rarr; </a>
-    </div>
-        </div>
-
-        <div class="carousel-item next-item">
-            <img src="./pics/Rectangle 25.png" alt="Dining Room Inspiration">
-        </div>
-        
-        <div class="carousel-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-</section>
-        <section class="gallery-section">
-            <div class="header">
-        <h1>Share your setup</h1>
-        <p>#FuniromFurniture</p>
-    </div>
-
-    <section class="grid-section p-0 w-100">
-            <div class="container-heading   algin-center  justify-center d-flex">
-                
+            <div class="inspirations-content">
+                <h2 class="inspirations-title">50+ Beautiful rooms inspiration</h2>
+                <p class="inspirations-subtitle">Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+                <button class="explore-button">Explore More</button>
             </div>
-            <div class="grid-container">
-                <img src="./pics/Rectangle 36 (1).png" alt="imageone" class="grid-item grid-1 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 38 (1).png" alt="imageone" class="grid-item grid-2 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 40 (1).png" alt="imageone" class="grid-item grid-3 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 43 (1).png" alt="imageone" class="grid-item grid-4 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 45 (1).png" alt="imageone" class="grid-item grid-5 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 37 (1).png" alt="imageone" class="grid-item grid-6 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 39 (1).png" alt="imageone" class="grid-item grid-7 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 41 (1).png" alt="imageone" class="grid-item grid-8 w-100 h-100"
-                    loading="lazy" />
-                <img src="./pics/Rectangle 44 (1).png" alt="imageone" class="grid-item grid-9 w-100" loading="lazy" />
+
+            <!-- Carousel for inspirations -->
+            <div class="inspirations-carousel-container">
+                <div class="carousel-item featured-item">
+                    <img src="./pics/Rectangle 24.png" alt="Bed Room Inspiration">
+                    <div class="item-info">
+                        <div class="info-details">
+                            <span class="item-number">01</span>
+                            <span class="separator"></span>
+                            <span class="item-name">Bed Room</span>
+                            <h3 class="item-heading">Inner Peace</h3>
+                        </div>
+                        <a href="#" class="item-arrow">&rarr;</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item next-item">
+                    <img src="./pics/Rectangle 25.png" alt="Dining Room Inspiration">
+                </div>
+                
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
         </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="header">
+                <h1>Share your setup</h1>
+                <p>#FuniromFurniture</p>
+            </div>
+
+            <section class="grid-section p-0 w-100">
+                <div class="container-heading align-center justify-center d-flex">
+                </div>
+                <div class="grid-container">
+                    <img src="./pics/Rectangle 36 (1).png" alt="imageone" class="grid-item grid-1 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 38 (1).png" alt="imageone" class="grid-item grid-2 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 40 (1).png" alt="imageone" class="grid-item grid-3 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 43 (1).png" alt="imageone" class="grid-item grid-4 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 45 (1).png" alt="imageone" class="grid-item grid-5 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 37 (1).png" alt="imageone" class="grid-item grid-6 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 39 (1).png" alt="imageone" class="grid-item grid-7 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 41 (1).png" alt="imageone" class="grid-item grid-8 w-100 h-100" loading="lazy" />
+                    <img src="./pics/Rectangle 44 (1).png" alt="imageone" class="grid-item grid-9 w-100" loading="lazy" />
+                </div>
+            </section>
+        </section>
+
+        <!-- Footer Section -->
         <footer class="main-footer">
             <div class="footer-container">
-                
+                <!-- Column 1: Brand Info -->
                 <div class="footer-col brand-info">
                     <h2 class="footer-logo">Furniro</h2>
                     <p class="address">
@@ -319,6 +334,7 @@
                     </p>
                 </div>
 
+                <!-- Column 2: Links -->
                 <div class="footer-col footer-links">
                     <h3>Links</h3>
                     <ul>
@@ -329,6 +345,7 @@
                     </ul>
                 </div>
 
+                <!-- Column 3: Help -->
                 <div class="footer-col footer-links">
                     <h3>Help</h3>
                     <ul>
@@ -338,6 +355,7 @@
                     </ul>
                 </div>
 
+                <!-- Column 4: Newsletter -->
                 <div class="footer-col newsletter">
                     <h3>Newsletter</h3>
                     <form>
@@ -347,14 +365,11 @@
                 </div>
             </div>
 
+            <!-- Copyright -->
             <div class="copyright">
                 <p>2023 furniro. All rights reserved</p>
             </div>
         </footer>
     </main>
-</body>
-</html>
-        
-
 </body>
 </html>
